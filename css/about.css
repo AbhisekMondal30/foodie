@@ -1,0 +1,947 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: manrope;
+    src: url(../fonts\Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Covered_By_Your_Grace;
+    src: url(../fonts/Covered_By_Your_Grace/CoveredByYourGrace-Regular.ttf);
+}
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+.d-flex {
+    display: flex;
+
+}
+
+/* top bar */
+.top-bar {
+    width: 100%;
+    min-height: 116px;
+}
+
+.top-bar-child-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 116px;
+}
+
+.top-bar-sub-main-div-2 i {
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.top-sub-child-div-1 a span {
+    color: #878680;
+    font-size: 12px;
+    font-family: manrope;
+}
+
+.top-sub-child-div-1 a {
+    text-decoration: none;
+}
+
+.top-sub-child-div-1 a p {
+    font-size: 14px;
+    font-family: manrope;
+    font-weight: bold;
+    color: black
+}
+
+.top-bar-sub-main-div-3 {
+    display: flex;
+}
+
+.top-sub-child-div-1 {
+    margin-left: 40px;
+    display: flex;
+}
+
+.line-1-1 {
+    width: 3px;
+    height: 70px;
+    background-color: #c1c0bf;
+}
+
+.top-sub-child-div-1 div {
+    margin-left: 40px;
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+
+    .top-bar-child-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .top-bar {
+
+        min-height: 216px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    .top-bar-child-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .top-bar {
+
+        min-height: 260px;
+    }
+
+    .top-sub-child-div-1 {
+        margin-left: -10px;
+    }
+
+    .line-1 {
+        display: none;
+    }
+}
+
+@media (min-width:1px) and (max-width:575px) {
+
+    .top-bar-child-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .top-bar {
+
+        min-height: 160px;
+    }
+
+    .top-sub-child-div-1 {
+        display: none;
+    }
+
+    .line-1 {
+        display: none;
+    }
+}
+
+/* nav bar */
+.nav-bar-main {
+    width: 100%;
+    min-height: 79px;
+    background-color: #E4E2D7;
+
+}
+
+.nav-bar-sub-1 ul li {
+    list-style: none;
+}
+
+.nav-bar-sub-1 ul li a:hover {
+    letter-spacing: 3px;
+    color: black;
+    font-weight: bolder;
+}
+
+.nav-bar-sub-1 ul li a {
+    text-decoration: none;
+    color: #878680;
+    font-size: 16px;
+    font-family: manrope;
+    margin-right: 20px;
+}
+
+.nav-bar-sub-1 ul {
+    display: flex;
+}
+
+.nav-bar-sub-2 a img {
+    margin-left: 20px;
+}
+
+.nav-bar-child {
+    display: flex;
+    justify-content: space-between;
+    min-height: 79px;
+    align-items: center;
+}
+
+.nav-bar-sub-3 i {
+    display: none;
+}
+
+.nav-bar-sub-2 {
+    margin-left: 580px;
+    display: flex;
+    align-items: center;
+    height: 79px;
+}
+
+.about a {
+    color: black !important;
+    font-weight: bolder !important;
+}
+
+.bellow-navbar {
+    display: none;
+}
+
+.bellow-navbar ul li {
+    list-style: none;
+}
+
+.bellow-navbar ul li a {
+    text-decoration: none;
+    color: #878680;
+    margin-top: 20px;
+}
+
+.bellow-navbar ul li a:hover {
+    letter-spacing: 3px;
+    color: black;
+}
+
+@media screen and (min-width:1400px) {
+    .nav-bar-sub-2 {
+        margin-left: 755px;
+    }
+
+    .nav-bar-sub-1 {
+        margin-left: -25px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .nav-bar-sub-2 {
+        margin-left: 717px;
+    }
+
+    .nav-bar-sub-1 {
+        margin-left: -25px;
+    }
+}
+
+@media (min-width:1px) and (max-width:1199px) {
+    .nav-bar-sub-2 {
+        display: none;
+    }
+
+    .nav-bar-sub-1 {
+        display: none;
+    }
+
+    .nav-bar-sub-3 i {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .bellow-navbar {
+
+        text-align: center;
+    }
+}
+
+/* banner section */
+.banner-main {
+    background-image: url(../Images/about\ banner.png);
+    background-size: cover;
+    min-height: 327px;
+}
+
+.banner-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 327px;
+}
+
+.banner-child span {
+    color: #878680;
+    font-size: 20px;
+    font-family: manrope;
+    margin-top: -113px;
+
+}
+
+.banner-child p {
+    color: #ffffff;
+    font-size: 80px;
+    font-family: manrope;
+    margin-left: -157px;
+    margin-top: 30px;
+    font-weight: bolder;
+
+}
+
+@media (min-width:1px) and (max-width:1199px) {
+
+    .banner-child {
+        margin-left: 94px;
+    }
+}
+
+
+/* Agriculture market */
+
+.agri-market-sec {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.agri-right-1 span {
+    font-size: 24px;
+    font-family: covered_by_your_grace;
+    color: #EEC044;
+}
+
+.agri-right-2 p {
+    font-size: 48px;
+    font-family: manrope;
+    font-weight: bolder;
+}
+
+.agri-right-3 p {
+    font-size: 20px;
+    font-family: manrope;
+    font-weight: bold;
+    color: #4BAF47;
+}
+
+.agri-right-4 p {
+    font-size: 16px;
+    font-family: manrope;
+    color: #878680;
+}
+
+.agri-sub-right-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agri-sub-right-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agri-sub-right-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agri-sub-right-1 p {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: manrope;
+}
+
+.agri-sub-right-2 p {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: manrope;
+}
+
+.agri-sub-right-3 p {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: manrope;
+}
+
+.agri-right-6 {
+    width: 197px;
+    height: 60px;
+    background-color: #4BAF47;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+}
+
+.agri-right-6 a p {
+    color: white;
+    top: 16px;
+    left: 42px;
+    position: absolute;
+}
+
+.agri-right-6 a {
+    text-decoration: none;
+}
+
+.a-mar-1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+}
+
+.agri-mar-1 img {
+    margin-top: -355px;
+    margin-left: -174px;
+}
+
+.box {
+    margin-top: -424px;
+    margin-left: -94px;
+    width: 100px;
+    height: 100px;
+    background-color: #C5CE38;
+    border-radius: 10px;
+}
+
+@media (min-width:992px) and (max-width:1527px) {
+
+    .agri-market-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agri-market-sub-child-2 {
+        margin-top: 350px !important;
+    }
+
+}
+
+@media (min-width:1px) and (max-width:991px) {
+
+    .agri-market-sub-child img {
+        width: 100%;
+    }
+
+    .agri-mar-1 img {
+        display: none;
+    }
+
+    .box {
+        display: none;
+    }
+
+}
+
+
+/* eco frinedly production */
+.eco-friendly-main {
+    background-image: url(../Images/Frame\ 1.png);
+    background-size: cover;
+    min-height: 616px;
+}
+
+.eco-fiendly-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 616px;
+}
+
+.eco-fiendly-child img {
+    margin-bottom: 30px;
+    margin-top: 250px;
+}
+
+.eco-fiendly-child p {
+    font-size: 60px;
+    color: white;
+    font-family: manrope;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media (min-width:1px) and (max-width:576px) {
+    .eco-fiendly-child img {
+        display: none
+    }
+}
+
+/* agri-product */
+
+.agri-product {
+    background-image: url(../Images/agri-cultural-pro.png);
+    background-size: cover;
+    min-height: 184px;
+}
+
+.agri-product-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 184px;
+}
+
+.agri-product-child p {
+    color: #A5A49A;
+    font-size: 18px;
+    font-family: manrope;
+    font-weight: 300;
+}
+
+@media (min-width:1px) and (max-width:767px) {
+
+    .agri-product-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* what they say */
+.what-they-say-div {
+    background-image: url(../Images/what\ they\ say.png);
+    background-size: cover;
+    min-height: 662px;
+}
+
+.what-they-say-child-1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.what-they-say-child-1 span {
+    color: #EEC044;
+    font-family: covered_by_your_grace;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.what-they-say-child-1 p {
+
+    font-family: manrope;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.what-they-say-sub-1 {
+    width: 500px;
+    min-height: 285px;
+    background-color: white;
+}
+
+.what-they-say-child-2 {
+    display: flex;
+    gap: 80px;
+    margin-left: 100px;
+}
+
+.what-they-say-sub-1 {
+    display: flex;
+}
+
+.circle-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4BAF47;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 9;
+    position: absolute;
+}
+
+.what-they-say-sub-1 img {
+    margin-top: 42px;
+    margin-left: -67px;
+    border-radius: 10px;
+}
+
+.testi-text {
+    font-size: 18px;
+    font-family: manrope;
+    color: #878680;
+    width: 300px;
+    margin-left: 72px;
+    margin-top: 20px;
+}
+
+.testi-text-2 {
+    font-size: 20px;
+    font-family: manrope;
+    font-weight: bolder;
+    margin-left: 241px;
+}
+
+.customer {
+    font-size: 16px;
+    color: #878680;
+    font-family: manrope;
+    font-weight: bolder;
+    margin-left: 241px;
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+    .what-they-say-child-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .what-they-say-child-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -20px;
+
+    }
+
+    .what-they-say-sub-1 img {
+        margin-left: 30px;
+        margin-top: 31px;
+        width: 70px;
+        height: 70px;
+    }
+
+
+}
+
+@media (min-width:1px) and (max-width:575px) {
+    .what-they-say-child-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -20px;
+
+    }
+
+    .what-they-say-sub-1 img {
+        display: none;
+    }
+
+    .testi-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-they-say-sub-1 {
+        width: 100%;
+    }
+
+    .testi-text {
+        width: 80%;
+    }
+}
+
+
+
+/* meet our farmer */
+
+.meet-our-farm-main-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.meet-our-farm-child span {
+    color: #EEC044;
+    font-family: covered_by_your_grace;
+    font-size: 24px;
+}
+
+.meet-our-farm-child p {
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: manrope;
+}
+
+.meet-our-farm-child {
+    text-align: center;
+}
+
+.farmer-0 {
+    width: 245px;
+    height: 92px;
+    background-color: white;
+    box-shadow: 0 0 4px gray;
+    margin-left: 96px;
+    margin-top: -91px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.farmer-0 p {
+    font-size: 20px;
+    font-family: manrope;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+.farmer-0 span {
+    font-size: 16px;
+    font-family: manrope;
+    font-weight: bolder;
+    margin-top: 50px;
+    color: #878680;
+    margin-left: -100px;
+}
+
+.meet-our-farm-child-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (min-width:1px) and (max-width:1199px) {
+    .meet-our-farm-child-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+/* footer section */
+.footer-section {
+    margin-top: 50px;
+    background-color: #1F1E17;
+    min-height: 581px;
+}
+
+.footer-main-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 581px;
+}
+
+.foo-flex {
+    display: flex;
+
+}
+
+.footer-para {
+    color: #A5A49A;
+    font-family: manrope;
+    height: 20px;
+    width: 255px;
+    margin-top: 20px;
+
+}
+
+.footer-icon i {
+    color: white;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+
+.footer-sub-div p {
+    font-size: 30px;
+    font-family: manrope;
+    font-weight: bold;
+    color: white;
+    margin-top: -10px;
+}
+
+.line-1 {
+    width: 50px;
+    height: 4px;
+    background-color: #4BAF47;
+    margin-top: -10px;
+}
+
+.footer-sub-child-div-1 ul li {
+    list-style: none;
+    color: #878680;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+.footer-sub-child-div-1 ul li i {
+    color: #878680;
+    font-size: 15px;
+}
+
+.news {
+    font-size: 30px;
+    font-family: manrope;
+    font-weight: bold;
+    color: white;
+    margin-top: -20px;
+}
+
+.bring-the-food p {
+    color: white;
+    font-size: 20px;
+    font-family: manrope;
+    font-weight: 100;
+    width: 287px;
+}
+
+.bring-the-food span {
+    color: #EEC044;
+    font-size: 15px;
+    font-family: manrope;
+    font-weight: 100;
+    margin-top: -20px;
+}
+
+.future-of-farm p {
+    color: white;
+    font-size: 20px;
+    font-family: manrope;
+    font-weight: 100;
+    width: 287px;
+}
+
+.future-of-farm span {
+    color: #EEC044;
+    font-size: 15px;
+    font-family: manrope;
+    font-weight: 100;
+    width: 232px;
+    margin-top: -20px;
+}
+
+.footer-sub-div-2 {
+    margin-left: 30px;
+}
+
+.contact {
+    font-size: 30px;
+    font-family: manrope;
+    font-weight: bold;
+    color: white;
+    margin-top: -20px;
+}
+
+.footer-sub-div-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.footer-sub-div-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.footer-sub-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.footer-sub-div-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.line-2 {
+    width: 50px;
+    height: 4px;
+    background-color: #4BAF47;
+    margin-top: -40px;
+}
+
+.line-3 {
+    width: 50px;
+    height: 4px;
+    background-color: #4BAF47;
+    margin-top: -20px;
+}
+
+.foo-flex i {
+    color: white;
+    font-size: 20px;
+    color: #EEC044;
+}
+
+.foo-flex p {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: -5px;
+    color: #878680;
+    width: 278px;
+}
+
+.enter-email {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.enter-email p {
+    color: #878680;
+    margin-top: 011px;
+    margin-left: 45px;
+}
+
+
+@media (min-width:1px) and (max-width:1199px) {
+    .footer-main-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .footer-sub-div-0 {
+        margin-bottom: 50px;
+        margin-left: 10px;
+    }
+
+    .footer-sub-div {
+        margin-bottom: 50px;
+        margin-left: -90px;
+    }
+
+    .footer-sub-div-2 {
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+    .footer-sub-div-3 {
+        margin-left: 70px;
+    }
+
+    .enter-email {
+        width: 214px;
+    }
+}
